@@ -12,7 +12,8 @@ namespace SalesWebMvc.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return RedirectToAction("About");
+            ViewData["Message"] = "CU";
         }
 
         public IActionResult About()
